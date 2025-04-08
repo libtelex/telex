@@ -2,8 +2,6 @@
 
 *Telex* finds telephone numbers in text.
 
-Having written something horribly inflexible to deal with European telephone numbers, I wanted to see if I could write something relatively simple - and a little more elegant - that would detect *any* telephone number with a degree of precision.  *Telex* is certainly more elegant, and probably more useful, than my previous solution, but it's still far from being perfect - it's still too naive, I think.  It's an interesting challenge and we'd appreciate your input - thank you.
-
 *Telex* is used by [SeeTheWorld](https://www.seetheworld.com/).
 
 ## Usage
@@ -25,3 +23,7 @@ $matches = $telex->findAll('A UK landline number: (01234) 567 890.  A UK mobile 
 * Write more tests, especially for `Telex`.
 * Handle multiple adjacent numbers.
 * Add logging to the find methods in Telex to make it easier to identify the causes of mismatches.
+
+## Background
+
+Having written something horribly inflexible to deal with European telephone numbers, I wanted to see if I could write something relatively simple - and a little more elegant - that would detect *any* telephone number with a degree of precision.  *Telex* is certainly more elegant, and probably more useful, than my previous solution, but it's still far from being perfect - it's still too naive, I think.  It's an interesting challenge and we'd appreciate your input - thank you.
